@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: rgb(225, 247, 196);
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: rgb(75, 75, 75);
+}
+
+.container {
+    display: grid;
+    grid-template-columns:20% ;
+    grid-template-rows: minmax(100px, auto);
+    grid-gap:20px;
+    grid-template-areas: 
+    "🤯 🤯 🤯 🤯"
+    "🌟 🌟 🌟 🌟 "
+    "🌟 🌟 🌟 🌟 ";
+}
+.menu{
+    grid-area: 🤯;  
+    font-size: 34px;
+}
+.content{
+grid-area: 🌟;
+}
+.content1{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 250px;
+    font-style: bold;
+}
+.content2{
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    font-size: 90px;
+}
+.content3{
+    position: absolute;
+    top: 15%;
+    right:15%
+}
